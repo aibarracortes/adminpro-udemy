@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+declare function init_plugins(): void;
+
 @Component({
   selector: '',
   templateUrl: './pages.component.html',
@@ -8,4 +10,10 @@ import { Component } from '@angular/core';
 })
 export class PagesComponent {
 
+  constructor() {}
+
+  ngOnInit() {
+    init_plugins();
+  }
+  
 }
